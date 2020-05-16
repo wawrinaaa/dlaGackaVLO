@@ -1,15 +1,28 @@
 body
 {
-    background-image: url("tło.jpg");
-    background-repeat: no-repeat;
+    background-image: url("../grafika_2d/tło.jpg");
     background-size: 100%;
+    text-align: center;
 }
-x-model {
-    animation: 5s spin linear infinite;
-  }
-
-  @keyframes spin {
-    to {
-      transform: rotateY(1turn);
-    }
-  }
+.image
+{
+  display: inline-block;
+  margin: 50px;
+  box-sizing: border-box;
+  width: 25vw;
+}
+img.img
+{
+  transition: ease-in-out 0.2s all;
+  opacity: 0.9;
+  border: 5px solid transparent;
+}
+img.img:hover
+{
+  border-color: black;
+  opacity: 1;
+}
+.buttons
+{
+  display: inline-block;
+}
